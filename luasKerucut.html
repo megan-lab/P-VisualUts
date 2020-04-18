@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/styleRumus.css">
+    </head>
+
+    <body>
+        <div class="back">
+            <a href="hitungLuas.html">
+              <img src="../img/back.jpg">
+            </a>
+        </div>
+        <header>
+            <h2>Menghitung Luas kerucut</h2>
+       </header> 
+        <section>
+            <div class="keys" id="ket">
+                <img src="../img/kerucut.png" alt="kerucut">
+                <h4>Luas Kerucut</h4>
+            </div>
+            <div class="keys" id="ket">
+                <p>Ket : </p>
+                <p>r = jari-jari</p>
+                <p>s = sisi</p>
+                <p>π = 3,14</p>
+            </div>
+        </section>
+        <section>
+            <div class="keys" id="ket">
+                <h2>Luas Selimut Kerucut</h2>
+                <h4>L = π.r.s</h4>
+
+                <table>
+                    <tr>
+                        <td><label for="usr">Input r</label></td>
+                        <td>= 
+                            <input type="text" id="rsk" onkeyup="luasSelimut()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="usr">Input s</label></td>
+                        <td>= 
+                            <input type="text" id="ssk" onkeyup="luasSelimut()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label> Hasil</label></td>
+                        <td>= 
+                            <output type="text" id="hasilSelimutKerucut"></output>
+                        </td>
+                    </tr>
+                </table>    
+            </div>
+            <div class="keys" id="ket">
+                
+                <h2>Luas Alas Kerucut</h2>
+                <h4>L = π.r²</h4>
+                <table>
+                    <tr>
+                        <td><label for="usr">Input r</label></td>
+                        <td>= 
+                            <input type="text" id="rak" onkeyup="luasAlas()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label> Hasil</label></td>
+                        <td>= 
+                            <output type="text" id="hasilAlasKerucut"></output>
+                        </td>
+                    </tr>
+                </table>    
+            </div>
+        </section>
+        <section>
+            <div class="keys" id="ket">
+                <h2>Luas Permukaan Kerucut</h2>
+                <h4>L = Luas Alas + Luas Selimut</h4>
+                <table>
+                    <tr>
+                        <td><label for="usr">Input Luas Alas</label></td>
+                        <td>= 
+                            <input type="text" id="hpa" onkeyup="luasPermukaan()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="usr">Input Luas Selimut</label></td>
+                        <td>= 
+                            <input type="text" id="hps" onkeyup="luasPermukaan()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label> Hasil</label></td>
+                        <td>= 
+                            <output type="text" id="hasilPermukaanKerucut"></output>
+                        </td>
+                    </tr>
+                </table>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>    

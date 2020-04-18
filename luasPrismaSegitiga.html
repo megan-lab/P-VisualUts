@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/styleRumus.css">
+    </head>
+
+    <body>
+        <div class="back">
+            <a href="hitungLuas.html">
+              <img src="../img/back.jpg">
+            </a>
+        </div>
+        <header>
+            <h3>Menghitung Luas Prisma Segitiga</h3>
+       </header> 
+        
+        <section>
+            <div class="keys">
+                <img src="../img/prisma_segitiga.png">
+            </div>
+        </section>
+
+        <section>
+            <div class="keys">
+                <h2>Luas Alas Prisma Segitiga</h2>
+                <h4>L = 0.5 x a x t</h4>
+                <table>
+                    <tr>
+                      <td><label for="usr">Input a</label></td>
+                      <td>= <input type="text" id="aap" onkeyup="luasAlasPrisma()"></td> 
+                    </tr>
+                    <tr>
+                      <td><label for="usr">Input t</label></td>
+                      <td>= <input type="text" id="tap" onkeyup="luasAlasPrisma()"></td> 
+                    </tr>
+                    <tr>
+                        <td><label> Hasil</label></td>
+                        <td>= <output type="text" id="hasilLuasAlasPrisma"></output></td> 
+                      </tr>
+                </table>
+            </div>
+            <div class="keys">
+                <h2>Luas Tegak Prisma Segitiga</h2>
+                <h4>L = t_prisma x a</h4>
+                <table>
+                    <tr>
+                        <td><label for="usr">Input t prisma</label></td>
+                        <td>= <input type="text" id="t_prismatp" onkeyup="luasTegakPrisma()"></td> 
+                    </tr>
+                    <tr>
+                        <td><label for="usr">Input a </label></td>
+                        <td>= <input type="text" id="atp" onkeyup="luasTegakPrisma()"></td> 
+                    </tr>
+                    <tr>
+                        <td><label> Hasil </label></td>
+                        <td>= <output type="text" id="hasilLuasTegakPrisma"></output></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section>
+            <div class="keys">
+                <h2>Luas Permukaan Prisma Segitiga</h2>
+                <h4>L = (2 x (0.5 x a x t)) + (3 x (t_prisma x a))</h4>
+                <table>
+                    <tr>
+                        <td><label for="usr">Input a</label></td>
+                        <td>= <input type="text" id="app" onkeyup="luasPermukaanPrisma()"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="usr">Input t </label></td>
+                        <td>= <input type="text" id="tpp" onkeyup="luasPermukaanPrisma()"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="usr">Input t prisma</label></td>
+                        <td>= <input type="text" id="t_prismapp" onkeyup="luasPermukaanPrisma()"></td>
+                    </tr>
+                    <tr>
+                        <td><label> Hasil </label></td>
+                        <td>= <output type="text" id="hasilPermukaanPrisma"></output></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>    
